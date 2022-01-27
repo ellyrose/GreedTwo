@@ -1,0 +1,18 @@
+{
+    "name": "lendable/greed",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lendable\\Greed\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Lendable\\Greed\\": "tests/"
+        }
+    },
+    "require": {}
+}
