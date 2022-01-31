@@ -45,12 +45,7 @@ class Greed
     private function throwIfDiceOutOfBounds(array $dice): void
     {
         foreach ($dice as $value) {
-            if ($value <= 0) {
-                $position = array_search($value, $dice);
-                throw new \InvalidArgumentException(sprintf('Die at position %d is invalid.', $position));
-            }
-
-            if ($value > 6) {
+            if ($value <= 0 || $value > 6) {
                 $position = array_search($value, $dice);
                 throw new \InvalidArgumentException(sprintf('Die at position %d is invalid.', $position));
             }
@@ -114,7 +109,7 @@ class Greed
         return $toAdd;
     }
 
-    private function scoreMain(array $results,$faceValue,$tripleScore): int 
+    private function scoreMain(array $results,$faceValue,$tripleScore): int
     {
         $toAdd = 0;
 
