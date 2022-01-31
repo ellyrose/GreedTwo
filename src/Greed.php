@@ -88,7 +88,7 @@ class Greed
 
     }
 
-    private function scoreOnes(array $results)
+    private function scoreOnes(array $results): int
     {
         $toAdd = 0;
 
@@ -114,7 +114,7 @@ class Greed
         return $toAdd;
     }
 
-    private function scoreMain(array $results,$faceValue,$tripleScore)
+    private function scoreMain(array $results,$faceValue,$tripleScore): int 
     {
         $toAdd = 0;
 
