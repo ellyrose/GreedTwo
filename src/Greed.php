@@ -107,7 +107,7 @@ class Greed
             }elseif ($results['1'] === 5){
                 $toAdd += $tripleScore * 4;
             }elseif ($results['1'] === 6){
-                $toAdd += $tripleScore * 8;
+                return $tripleScore * 8;
             }
         }
 
@@ -125,7 +125,7 @@ class Greed
         }elseif ($results[$faceValue] === 5){
             $toAdd += $tripleScore * 4;
         }elseif ($results[$faceValue] === 6){
-            $toAdd += $tripleScore * 8;
+            return $tripleScore * 8;
         }
 
         return $toAdd;
