@@ -140,17 +140,6 @@ class GreedTest extends TestCase
         $this->assertSame(1000, $fixture->score([1,1,1,2,4,3]));
     }
 
-//    /**
-//     * @test
-//     */
-//    public function it_should_score_1100_for_a_triple_1_and_a_single_1(): void
-//    {
-//        $fixture = new Greed();
-//
-//        $this->assertSame(1100, $fixture->score([1,1,1,3,6,1]));
-//        $this->assertSame(1100, $fixture->score([1,6,3,1,1,1]));
-//    }
-//
     /**
      * @test
      */
@@ -268,19 +257,6 @@ class GreedTest extends TestCase
         $this->assertSame(500, $fixture->score([5,5,2,2,5]));
     }
 
-//    /**
-//     * @test
-//     */
-//    public function it_should_score_550_for_triple_5s_and_single_5(): void
-//    {
-//        $fixture = new Greed();
-//
-//        $this->assertSame(550, $fixture->score([5,5,5,4,5]));
-//        $this->assertSame(550, $fixture->score([5,6,5,5,5]));
-//        $this->assertSame(550, $fixture->score([5,5,5,2,5,6]));
-//    }
-
-
     /**
      * @test
      */
@@ -313,17 +289,6 @@ class GreedTest extends TestCase
         $this->assertSame(2000, $fixture->score([1,1,1,1,4,2]));
         $this->assertSame(2000, $fixture->score([1,3,6,1,1,1]));
     }
-
-//    /**
-//     * @test
-//     */
-//    public function it_should_score_2100_for_four_1s_and_single_1(): void
-//    {
-//        $fixture = new Greed();
-//
-//        $this->assertSame(2100, $fixture->score([6,4,1,1,1,1]));
-//        $this->assertSame(2100, $fixture->score([1,1,1,1,4,6]));
-//    }
 
     /**
      * @test
@@ -382,19 +347,7 @@ class GreedTest extends TestCase
         $this->assertSame(1000, $fixture->score([5,5,5,5,2,3]));
         $this->assertSame(1000, $fixture->score([2,3,5,5,5,5]));
     }
-
-//    /**
-//     * @test
-//     */
-//    public function it_should_score_1050_for_four_5s_and_single_5(): void
-//    {
-//        $fixture = new Greed();
-//
-//        $this->assertSame(1050, $fixture->score([5,5,5,5,6,5]));
-//        $this->assertSame(1050, $fixture->score([5,6,5,5,5,5]));
-//
-//    }
-
+    
     /**
      * @test
      */
