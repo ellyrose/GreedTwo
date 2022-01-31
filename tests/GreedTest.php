@@ -159,7 +159,7 @@ class GreedTest extends TestCase
         $fixture = new Greed();
 
         $this->assertSame(800, $fixture->score([2,2,3,3,4,4]));
-        $this->assertSame(0, $fixture->score([2,3,3,2,4,4]));
+
     }
 
     /**
